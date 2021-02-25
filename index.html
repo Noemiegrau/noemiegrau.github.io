@@ -2,40 +2,140 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8" />
-    <title>HTML + CSS</title>
-​
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noemie Grau</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   </head>
 ​
   <body>
+    <!--navigation-->
     <header>
-      <h1>Student Bioooo</h1>
-    </header>
-​
-    <div class="container">
-      <section id="main-bio">
-        <!-- TODO: Replace content with your own info -->
-        <h2>Noemie Grau</h2>
-​
-        <img
-          id="bio-image"
-          src="https://placehold.it/200x200"
-          alt="Noemie Grau"
-        />
-​
-        <p>
-          Bonjour! <a href="http://www.lipsum.com/">www.lipsum.com</a>
-        </p>
-      </section>
-​
-      <section id="contact-info">
-        <h2>Contact Info</h2>
+      <h1>
+          <a>
+              Noemie Grau
+          </a>
+      </h1>
+      <nav>
+        <!--Unordered list element-->
         <ul>
-          <li><strong>Email:</strong> <a href="#">noemiegrau@outlook.com</a></li>
-          <li><strong>Github:</strong> <a href="#">https://github.com/Noemiegrau</a></li>
-          <li><strong>LinkedIn:</strong> <a href="#">www.linkedin.com/in/noemiegrau</a></li>
-        </ul>
-      </section>
+          <!--List item element-->
+          <li>
+              <!--Anchor element-->
+              <a href="#about-me">About Me</a>
+          </li>
+          <li>
+              <a href="#my-work">My Work</a>
+          </li>
+          <li>
+              <a href="#contact-me">Contact Me</a>
+          </li>
+          <li>
+              <a href="#my-resume">My Resume</a>
+          </li>
+        </ul>  
+      </nav>
+  </header>
+
+​<!--hero/jumbotron-->
+  <section class="hero">
+
+    <div class="hero-img">
+      <img src="./assets/images/icon-me.jpg" alt="Noemie Grau smiling" />
     </div>
-  </body>
+
+  </section>
+
+​<!--About Me Section-->
+  <section id="about-me" class="sections">
+
+    <div class="sections-title">
+      <h3>About Me</h3>
+    </div>
+
+    <article class="about-me-content">
+      <p>
+        My name is Noemie. I am from France and I live in Los Angeles. Welcome to my Portfolio!
+      </p>
+    </article>
+
+  </section>
+
+​<!--My Work Section-->
+  <section id="my-work" class="sections">
+
+    <div class="section-title">
+      <h3>My Work</h3>
+    </div>
+
+    <div class="work-list">
+
+      <div class="run-buddy">
+
+        <div class="my-work-content">
+          <a href="https://noemiegrau.github.io/run-buddy/" target="_blank"> <img src="./assets/images/run-buddy-screenshot.png" alt="Noemie's project's website named 'Run Buddy'" /></a>
+        </div>
+
+        <div class="bottom-left">
+          Run Buddy <br>
+          HTML/CSS
+        </div>
+
+      </div>
+
+      <div class="horiseon">
+
+        <div class="my-work-content">
+          <a href="https://noemiegrau.github.io/horiseon/" target="_blank"> <img src="./assets/images/horiseon-screenshot.png" alt="Noemie's project's website named 'Horiseon'" /></a>
+        </div>
+
+        <div class="bottom-left">
+          Horiseon <br>
+          HTML/CSS
+        </div>
+
+      </div>
+    
+    </div>
+
+  </section>
+
+<!--Resume Section-->
+<section id="my-resume" class="sections">
+
+  <div class="section-title">
+    <h3>Resume</h3>
+  </div>
+
+  <div class="resume-content">
+    <p>
+      Coming soon..
+    </p>
+  </div>
+
+</section>
+
+​<!--Contact Me Section-->
+  <section id="contact-me" class="sections">
+
+    <div class="section-title">
+      <h3>Contact Me</h3>
+    </div>
+
+    <div class="contact-me-links" >
+      <ul class="contact-links-list">
+          <li>
+              <a href="mailto:noemiegrau@outlook.fr">noemiegrau@outlook.fr</a>
+          </li>
+          <li>
+              <a href="https://github.com/Noemiegrau">Github</a>
+          </li>
+          <li>
+              <a href="www.linkedin.com/in/noemiegrau">Linkedin</a>
+          </li>
+      </ul>
+    </div>
+
+  </section>
+
+</body>
 </html> 
