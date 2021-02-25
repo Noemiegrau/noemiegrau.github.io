@@ -5,12 +5,14 @@
     4. =HERO
 	5. =ABOUT ME
     6. =MY WORK
-    7. =CONTACT ME
+    7. =MY RESUME
+    8. =CONTACT ME
 
 */
 
 
 /* ===1.GLOBAL=== */
+
 * {
     margin: 0;
     padding: 0;
@@ -18,25 +20,24 @@
 }
 
 body {
-    background: #f0f9ff;
+    background: #dbf1fcbe;
     font-family: Helvetica, Arial, sans-serif;
 }
 
 p {
-    font-size: 23px;
     color: #0a0949;
+    font-size: 1.10vw;
 }
 
 body h3 {
     color: #0a0949;
 }
 
-/* ===2.HEADER=== */
+/* ===2.HEADER AND FOOTER=== */
+
 header {
-    background:  rgb(3, 1, 20);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
+    background:  #0a0949;
+
     padding-left: -20px;
     margin-bottom: 0;
     display: flex;
@@ -51,12 +52,27 @@ header {
 header h1 {
     margin: 0;
     color: #0a0949;
-    font-size: 40px;
 }
 
 header h1 a {
-    font-size: 40px;
+    font-size: 1.80vw;
     text-decoration: none;
+}
+
+footer {
+    background:  #0a0949;
+    width: auto;
+    height: 80px;
+    padding: 30px;
+}
+
+footer h2 {
+    color:#39a6b2;
+    font-weight: bold;
+    font-size: 1.30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ===3.NAVIGATION=== */
@@ -73,12 +89,21 @@ header nav ul {
     list-style: none;
   }
 
+header nav ul li {
+    margin: 10px;
+  }
+
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 1.30vw;
     color: #39a6b2;
     text-decoration: none;
+    border-bottom: 6px solid #39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 a {
@@ -104,9 +129,10 @@ header nav ul li a:hover {
 
 
 /* ===4.HERO=== */
+
 .hero {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     flex-wrap: wrap;
     background-image: url("../images/blue.jpg");
     background-size: cover;
@@ -117,8 +143,16 @@ header nav ul li a:hover {
     height: 300px;
     width: 100%;
     text-align: center;
-    align-items: flex-end;
     color: white;
+}
+
+.hero .me-hero-img {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 80px;
+    margin-top: 10px;
 }
 
 .bottom-right {
@@ -133,19 +167,28 @@ header nav ul li a:hover {
     margin: 16px;
 }
 
-/* ===5.ABOUT ME SECTION=== */
+/* ===5.ALL SECTIONS=== */
 
 .section-title {
-    font-size: 28px;
+    font-size: 1.30vw;
     color: #0a0949;
-    border-right: 3px solid;
-    padding: 20px;
-    margin-right: 0px;
-    text-align: left;
-    width: 20%;
+    padding: 0;
+    margin-right: 0;
+    text-align: right;
+    width: 8%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+}
+
+.section-right {
+    border-left: 3px solid;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
 }
 
 .sections {
@@ -158,8 +201,103 @@ header nav ul li a:hover {
     justify-content: flex-start;
 }
 
-.about-me img {
-    margin-left: 20px;
-}
+
+/* ===6.ABOUT ME SECTION=== */
+
+
 /* ===6.MY WORK SECTION=== */
-/* ===7.CONTACT ME SECTION=== */
+
+.run-buddy img {
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    border: 5px solid #39a6b2;
+}
+
+.horiseon img {
+    max-width: 50%;
+    height: auto;
+    padding: 0;
+    border: 5px solid #39a6b2;
+}
+
+#my-work .run-buddy img:hover {
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    border: 5px solid #39a6b2;
+    opacity: 0.3;
+}
+
+#my-work .horiseon img:hover {
+    max-width: 50%;
+    height: auto;
+    padding: 0;
+    border: 5px solid #39a6b2;
+    opacity: 0.3;
+}
+
+#my-work {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.horiseon {
+    position: relative;
+}
+
+.run-buddy {
+    position: relative;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    color:#0a0949;
+    font-weight: bold;
+    font-size: 1.10vw;
+    background-color: #39a6b2;
+    background-size: 50%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#my-work span {
+    font-weight: lighter;
+}
+
+#my-work p {
+    font-size: 1vw;
+}
+
+/* ===7.MY RESUME SECTION=== */
+
+
+/* ===8.CONTACT ME SECTION=== */
+
+#contact-me ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+#contact-me ul li {
+    margin: 10px;
+}
+
+#contact-me ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.30vw;
+    color: #39a6b2;
+    text-decoration: none;
+    border-bottom: 6px solid #39a6b2;
+}
+
+#contact-me ul li a:hover {
+    background: #39a6b2;
+    color: #0a0949;
+    text-shadow: none;
+}
