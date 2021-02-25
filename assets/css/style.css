@@ -1,49 +1,165 @@
+/* CSS DIRECTORY
+	1. =GLOBAL
+	2. =HEADER
+    3. =NAVIGATION
+    4. =HERO
+	5. =ABOUT ME
+    6. =MY WORK
+    7. =CONTACT ME
+
+*/
+
+
+/* ===1.GLOBAL=== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 body {
-    padding: 0;
-    margin: 0;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 18px;
-    line-height: 150%;
-    color: #D49E8D;
-    background: #E8DFE0;
+    background: #f0f9ff;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+    font-size: 23px;
+    color: #0a0949;
+}
+
+body h3 {
+    color: #0a0949;
+}
+
+/* ===2.HEADER=== */
+header {
+    background:  rgb(3, 1, 20);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: -20px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative; 
+    top: -20px;
+    color: #0a0949;
   }
   
-
-header {
-    background: #b7def7;
-
-}
-
-h1 {
-    padding: 20px 0;
+header h1 {
     margin: 0;
-    margin-bottom: 20px;
-    font-size: 28px;
-    color: white;
+    color: #0a0949;
+    font-size: 40px;
+}
+
+header h1 a {
+    font-size: 40px;
+    text-decoration: none;
+}
+
+/* ===3.NAVIGATION=== */
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    color: #39a6b2;
+    text-decoration: none;
+}
+
+header h1 a {
+    background: #39a6b2;
+    color: #0a0949;
+    text-shadow: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+
+header nav ul li a:hover {
+    background: #39a6b2;
+    color: #0a0949;
+    text-shadow: none;
+  }
+
+
+/* ===4.HERO=== */
+.hero {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    background-image: url("../images/blue.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    position: relative;
+    margin-top: -39px;
+    height: 300px;
+    width: 100%;
     text-align: center;
+    align-items: flex-end;
+    color: white;
 }
 
-
-h2 {
-    font-size: 24px;
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    color:#0a0949;
+    font-weight: bold;
+    font-size: 28px;
+    background-color: #39a6b2;
+    padding: 20px;
+    margin: 16px;
 }
 
-a {
-    color: lavender;
+/* ===5.ABOUT ME SECTION=== */
+
+.section-title {
+    font-size: 28px;
+    color: #0a0949;
+    border-right: 3px solid;
+    padding: 20px;
+    margin-right: 0px;
+    text-align: left;
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
-.container {
-    width: 1024px;
-    margin: 0 auto;
+.sections {
+    margin: 20px 60px;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-#contact-info {
-    width: 30%
+.about-me img {
+    margin-left: 20px;
 }
+/* ===6.MY WORK SECTION=== */
+/* ===7.CONTACT ME SECTION=== */
