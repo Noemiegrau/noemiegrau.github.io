@@ -19,23 +19,29 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #0a0949;
+    --secondary-color: #39a6b2;
+}
+
 body {
     background: #dbf1fcbe;
+    font-family: Garamond, Helvetica, Arial, sans-serif;
 }
 
 p {
-    color: #0a0949;
+    color: var(--primary-color);
     font-size: 18px;
 }
 
 body h3 {
-    color: #0a0949;
+    color: var(--primary-color);
 }
 
 /* ===2.HEADER AND FOOTER=== */
 
 header {
-    background-color:  #0a0949;
+    background-color:  var(--primary-color);
     padding-left: -20px;
     display: flex;
     justify-content: space-between;
@@ -43,29 +49,35 @@ header {
     flex-wrap: wrap;
     position: relative; 
     top: -20px;
-    color: #0a0949;
+    color: var(--primary-color);
   }
   
 header h1 {
     margin: 0;
-    color: #0a0949;
+    color: var(--primary-color);
 }
 
 header h1 a {
     font-size: 35px;
     text-decoration: none;
-    color: #0a0949;
-}
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    text-shadow: none;
+    margin: 5px 0;
+    padding: 10px 10px 10px 100px;
+    display: flex;
+    justify-content: flex-start;
+  }
 
 footer {
-    background-color:  #0a0949;
+    background-color:  var(--primary-color);
     width: auto;
     height: 80px;
     padding: 30px;
 }
 
 footer h2 {
-    color:#39a6b2;
+    color: var(--secondary-color);
     font-weight: bold;
     font-size: 25px;
     display: flex;
@@ -88,9 +100,9 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-    color: #39a6b2;
+    color: var(--secondary-color);
     text-decoration: none;
-    border-bottom: 6px solid #39a6b2;
+    border-bottom: 6px solid var(--secondary-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -98,19 +110,9 @@ header nav ul li a {
     margin: 10px;
 }
 
-header h1 a {
-    background: #39a6b2;
-    color: #0a0949;
-    text-shadow: none;
-    margin: 5px 0;
-    padding: 10px 10px 10px 100px;
-    display: flex;
-    justify-content: flex-start;
-  }
-
 header nav ul li a:hover {
-    background: #39a6b2;
-    color: #0a0949;
+    background: var(--secondary-color);
+    color: var(--primary-color);
     text-shadow: none;
   }
 
@@ -140,10 +142,10 @@ header nav ul li a:hover {
     position: absolute;
     bottom: 8px;
     right: 16px;
-    color:#0a0949;
+    color:var(--primary-color);
     font-weight: bold;
     font-size: 1.20vw;
-    background-color: #39a6b2;
+    background-color: var(--secondary-color);
     padding: 20px;
     margin: 16px;
 }
@@ -164,7 +166,7 @@ header nav ul li a:hover {
 
 .section-title h3 {
     font-size: 25px;
-    color: #0a0949;
+    color: var(--primary-color);
     padding: 35px;
     margin: 5px;
     text-align: right;
@@ -180,7 +182,6 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    flex-direction: row;
     align-content: center;
     width: 80%;
 }
@@ -203,8 +204,6 @@ header nav ul li a:hover {
 
 #my-work {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
 }
 
 #my-work span {
@@ -219,21 +218,21 @@ header nav ul li a:hover {
     max-width: 100%;
     height: auto;
     padding: 0;
-    border: 5px solid #39a6b2;
+    border: 5px solid var(--secondary-color);
 }
 
 .horiseon img {
     max-width: 50%;
     height: auto;
     padding: 0;
-    border: 5px solid #39a6b2;
+    border: 5px solid var(--secondary-color);
 }
 
 #my-work .run-buddy img:hover {
     max-width: 100%;
     height: auto;
     padding: 0;
-    border: 5px solid #39a6b2;
+    border: 5px solid var(--secondary-color);
     opacity: 0.3;
 }
 
@@ -241,7 +240,7 @@ header nav ul li a:hover {
     max-width: 50%;
     height: auto;
     padding: 0;
-    border: 5px solid #39a6b2;
+    border: 5px solid var(--secondary-color);
     opacity: 0.3;
 }
 
@@ -256,10 +255,10 @@ header nav ul li a:hover {
 .bottom-left {
     position: absolute;
     bottom: 8px;
-    color:#0a0949;
+    color: var(--primary-color);
     font-weight: bold;
     font-size: 20px;
-    background-color: #39a6b2;
+    background-color: var(--secondary-color);
     background-size: 50%;
     padding: 20px;
     margin-bottom: 20px;
@@ -273,17 +272,42 @@ header nav ul li a:hover {
     justify-content: flex-start;
 }
 
+#my-resume .section-right {
+    width: 37%;
+}
+
 #my-resume p {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+#my-resume .section-title {
+    width: 17%;
+}
+
+#my-resume h3 {
+    padding-left: 0px;
+}
+
+
+
 /* ===8.CONTACT ME SECTION=== */
+
+#contact-me .section-title {
+    width: 17%;
+}
+
+#contact-me h3 {
+    padding-left: 0px;
+}
+
+#contact-me .section-right {
+    width: 20%;
+}
 
 #contact-me ul {
     display: flex;
-    align-items: center;
     list-style: none;
   }
 
@@ -294,48 +318,378 @@ header nav ul li a:hover {
 #contact-me ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    color: #39a6b2;
+    color: var(--secondary-color);
     text-decoration: none;
-    border-bottom: 6px solid #39a6b2;
+    border-bottom: 6px solid var(--secondary-color);
     font-size: 2vw;
 }
 
 #contact-me ul li a:hover {
-    background: #39a6b2;
-    color: #0a0949;
+    background: var(--secondary-color);
+    color: var(--primary-color);
     text-shadow: none;
 }
 
 
+/*The small screens media queries versions will look different than the Lernantino mock-up 
+because I thought different design for smaller screens would look better*/
+
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
 
-  }
+
+.section-title h3 {
+    font-size: 26px;
+    padding: 25px;
+}
+
+#my-resume .section-title {
+    width: 15%;
+}
+
+#my-resume h3 {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+#contact-me .section-title {
+    width: 15%;
+}
+
+#contact-me h3 {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+#about-me {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+#my-work {
+    margin-bottom: 40px;
+}
+
+#contact-me ul li a {
+    border: 3px solid var(--secondary-color);
+    font-size: 2vw;
+}
+
+#contact-me ul li a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+    
+footer {
+    padding: 15px;
+    padding-bottom: 18px;
+    height: 20px;
+}
+    
+footer h2 {
+    font-size: 18px;
+    height: 2px;
+    font-weight: normal;
+}
+}
   
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width: 768px) {
 
-  }
+.sections {
+    margin: 20px 60px;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+.section-title h3 {
+    padding-top: 0;
+    padding-bottom: 16px;
+    margin-left: 230px;
+    margin-bottom: 35px;
+    border-bottom: 3px solid var(--primary-color);
+    margin-top: 35px;
+}
+    
+.section-title h3 br {
+    display: none;
+}
+    
+.section-right {
+    border-left: none;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    width: 80%;
+}
+    
+#about-me {
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+}
+    
+#about-me p{
+    display: flex;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-left: 15px;
+    width: 120%;
+    font-size: 20px;
+}
+
+#my-work {
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+
+.bottom-left {
+    padding: 5px;
+}
+
+.run-buddy img {
+    max-width: 120%;
+    border: 10px solid var(--secondary-color);
+}
+
+.horiseon img {
+    max-width: 80%;
+    border: 10px solid var(--secondary-color);
+}
+
+.bottom-left p span {
+    font-size: 10px;
+}
+
+#my-resume {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+
+}
+
+#my-resume p {
+    font-size: 20px;
+}
+
+#my-resume h3 {
+    margin-left: 225px;
+    padding-bottom: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    align-content: center;
+}
+
+#my-resume .section-right {
+    width: 100%;
+}
+
+#contact-me h3 {
+    margin-left: 225px;
+    padding-bottom: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+}
+
+#contact-me .section-right {
+    width: 100%;
+}
+
+#contact-me ul {
+    padding-left: 50px;
+}
+
+#contact-me ul li a {
+    border: 3px solid var(--secondary-color);
+    font-size: 2.4vw;
+}
+
+#contact-me ul li a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+footer {
+    padding: 15px;
+    padding-bottom: 18px;
+    height: 10px;
+}
+
+footer h2 {
+    font-size: 12px;
+    height: 5px;
+    font-weight: normal;
+}
+}
   
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
-   
-footer {
-        background-color:  #0a0949;
-        width: 100%;
-        height: 80px;
-        padding: 30px;
+
+header h1 a {
+    background-color: var(--secondary-color);
+    padding-left: 12px;
+    font-size: 35px;
 }
 
-#contact-me {
+header h1 {
+    margin-top: 22px;
+    margin-left: 100px;
+}
+
+header {
+    padding-left: 80px;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 2.3vw;
+    border-bottom: 4.5px solid var(--secondary-color);
+}
+
+.hero .me-hero-img {
+    width: 200px;
+    height: 200px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 14px;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.20vw;
+    background-color: var(--secondary-color);
+    padding: 5px;
+}
+
+
+.sections {
+    margin: 20px 60px;
+    padding-bottom: 50px;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
 }
 
-header {
-    width: 100%;
-    text-align: center;
-    color: red;
-  }
 
+.section-title h3 {
+    padding-top: 0;
+    padding-bottom: 16px;
+    margin-left: 140px;
+    margin-bottom: 35px;
+    border-bottom: 3px solid var(--primary-color);
+    margin-top: 35px;
 }
+
+.section-title h3 br {
+    display: none;
+}
+
+
+.section-right {
+    border-left: none;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    width: 80%;
+}
+
+#about-me {
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+}
+
+#about-me p{
+    display: flex;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-left: 15px;
+    width: 120%;
+}
+
+#my-work {
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+
+.bottom-left {
+    padding: 5px;
+}
+
+.bottom-left p span {
+    font-size: 10px;
+}
+
+#my-resume {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#my-resume h3 {
+    margin-left: 140px;
+    padding-bottom: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    align-content: center;
+}
+
+#my-resume .section-right {
+    width: 100%;
+}
+
+#contact-me h3 {
+    margin-left: 140px;
+    padding-bottom: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+}
+
+#contact-me h3 br {
+    display: none;
+}
+
+#contact-me .section-right {
+    width: 100%;
+}
+
+#contact-me ul {
+    padding-left: 12px;
+}
+
+#contact-me ul li a {
+    border: 3px solid var(--secondary-color);
+    font-size: 2.4vw;
+}
+
+#contact-me ul li a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+footer {
+    padding: 15px;
+    padding-bottom: 18px;
+    height: 10px;
+}
+
+footer h2 {
+    font-size: 12px;
+    height: 5px;
+    font-weight: normal;
+}
+}
+
+
