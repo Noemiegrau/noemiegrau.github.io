@@ -21,12 +21,11 @@
 
 body {
     background: #dbf1fcbe;
-    font-family: Helvetica, Arial, sans-serif;
 }
 
 p {
     color: #0a0949;
-    font-size: 1.10vw;
+    font-size: 18px;
 }
 
 body h3 {
@@ -36,10 +35,8 @@ body h3 {
 /* ===2.HEADER AND FOOTER=== */
 
 header {
-    background:  #0a0949;
-
+    background-color:  #0a0949;
     padding-left: -20px;
-    margin-bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,12 +52,13 @@ header h1 {
 }
 
 header h1 a {
-    font-size: 1.80vw;
+    font-size: 35px;
     text-decoration: none;
+    color: #0a0949;
 }
 
 footer {
-    background:  #0a0949;
+    background-color:  #0a0949;
     width: auto;
     height: 80px;
     padding: 30px;
@@ -69,7 +67,7 @@ footer {
 footer h2 {
     color:#39a6b2;
     font-weight: bold;
-    font-size: 1.30vw;
+    font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,26 +75,19 @@ footer h2 {
 
 /* ===3.NAVIGATION=== */
 
-header nav {
-    margin: 7px 0;
-}
-
 header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-  }
-
-header nav ul li {
-    margin: 10px;
+    margin: 7px 0;
   }
 
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.30vw;
+    font-size: 1.55vw;
     color: #39a6b2;
     text-decoration: none;
     border-bottom: 6px solid #39a6b2;
@@ -104,22 +95,18 @@ header nav ul li a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin: 10px;
 }
 
 header h1 a {
     background: #39a6b2;
     color: #0a0949;
     text-shadow: none;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 100px;
+    margin: 5px 0;
+    padding: 10px 10px 10px 100px;
     display: flex;
     justify-content: flex-start;
   }
-
 
 header nav ul li a:hover {
     background: #39a6b2;
@@ -132,18 +119,13 @@ header nav ul li a:hover {
 
 .hero {
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
-    background-image: url("../images/blue.jpg");
+    background-image: url("../images/blue2.png");
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
     position: relative;
     margin-top: -39px;
-    height: 300px;
-    width: 100%;
-    text-align: center;
-    color: white;
 }
 
 .hero .me-hero-img {
@@ -151,8 +133,7 @@ header nav ul li a:hover {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 80px;
-    margin-top: 10px;
+    margin: 10px 0px 10px 80px;
 }
 
 .bottom-right {
@@ -161,7 +142,7 @@ header nav ul li a:hover {
     right: 16px;
     color:#0a0949;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 1.20vw;
     background-color: #39a6b2;
     padding: 20px;
     margin: 16px;
@@ -169,43 +150,70 @@ header nav ul li a:hover {
 
 /* ===5.ALL SECTIONS=== */
 
-.section-title {
-    font-size: 1.30vw;
-    color: #0a0949;
-    padding: 0;
-    margin-right: 0;
-    text-align: right;
-    width: 8%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-.section-right {
-    border-left: 3px solid;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    width: 50%;
-}
-
 .sections {
     margin: 20px 60px;
     padding-bottom: 50px;
     width: 80%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+}
+
+.section-title {
+    display: flex;
+}
+
+.section-title h3 {
+    font-size: 25px;
+    color: #0a0949;
+    padding: 35px;
+    margin: 5px;
+    text-align: right;
+    /*width: 8%;*/
+    display: flex;
     justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.section-right {
+    border-left: 3px solid;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-content: center;
+    width: 80%;
 }
 
 
 /* ===6.ABOUT ME SECTION=== */
 
+#about-me {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#about-me p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* ===6.MY WORK SECTION=== */
+
+#my-work {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#my-work span {
+    font-weight: lighter;
+}
+
+#my-work p {
+    font-size: 15px;
+}
 
 .run-buddy img {
     max-width: 100%;
@@ -237,13 +245,6 @@ header nav ul li a:hover {
     opacity: 0.3;
 }
 
-#my-work {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-}
-
 .horiseon {
     position: relative;
 }
@@ -257,23 +258,26 @@ header nav ul li a:hover {
     bottom: 8px;
     color:#0a0949;
     font-weight: bold;
-    font-size: 1.10vw;
+    font-size: 20px;
     background-color: #39a6b2;
     background-size: 50%;
     padding: 20px;
     margin-bottom: 20px;
 }
 
-#my-work span {
-    font-weight: lighter;
-}
-
-#my-work p {
-    font-size: 1vw;
-}
 
 /* ===7.MY RESUME SECTION=== */
 
+#my-resume {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#my-resume p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* ===8.CONTACT ME SECTION=== */
 
@@ -290,14 +294,48 @@ header nav ul li a:hover {
 #contact-me ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.30vw;
     color: #39a6b2;
     text-decoration: none;
     border-bottom: 6px solid #39a6b2;
+    font-size: 2vw;
 }
 
 #contact-me ul li a:hover {
     background: #39a6b2;
     color: #0a0949;
     text-shadow: none;
+}
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+   
+footer {
+        background-color:  #0a0949;
+        width: 100%;
+        height: 80px;
+        padding: 30px;
+}
+
+#contact-me {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    color: red;
+  }
+
 }
