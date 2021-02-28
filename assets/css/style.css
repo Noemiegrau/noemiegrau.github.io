@@ -1,13 +1,13 @@
 /* CSS DIRECTORY
 	1. =GLOBAL
-	2. =HEADER
+	2. =HEADER AND FOOTER
     3. =NAVIGATION
     4. =HERO
-	5. =ABOUT ME
-    6. =MY WORK
-    7. =MY RESUME
-    8. =CONTACT ME
-
+    5. =ALL SECTIONS
+	6. =ABOUT ME
+    7. =MY WORK
+    8. =MY RESUME
+    9. =CONTACT ME
 */
 
 
@@ -21,7 +21,7 @@
 
 :root {
     --primary-color: #0a0949;
-    --secondary-color: #39a6b2;
+    --secondary-color: #39a6b2; 
 }
 
 body {
@@ -200,7 +200,7 @@ header nav ul li a:hover {
     justify-content: center;
 }
 
-/* ===6.MY WORK SECTION=== */
+/* ===7.MY WORK SECTION=== */
 
 #my-work {
     display: flex;
@@ -212,6 +212,10 @@ header nav ul li a:hover {
 
 #my-work p {
     font-size: 15px;
+}
+
+#my-work .section-title {
+    width: 150px;
 }
 
 .run-buddy img {
@@ -265,7 +269,7 @@ header nav ul li a:hover {
 }
 
 
-/* ===7.MY RESUME SECTION=== */
+/* ===8.MY RESUME SECTION=== */
 
 #my-resume {
     display: flex;
@@ -283,7 +287,7 @@ header nav ul li a:hover {
 }
 
 #my-resume .section-title {
-    width: 17%;
+    width: 150px;
 }
 
 #my-resume h3 {
@@ -291,11 +295,10 @@ header nav ul li a:hover {
 }
 
 
-
-/* ===8.CONTACT ME SECTION=== */
+/* ===9.CONTACT ME SECTION=== */
 
 #contact-me .section-title {
-    width: 17%;
+    width: 150px;
 }
 
 #contact-me h3 {
@@ -320,8 +323,8 @@ header nav ul li a:hover {
     font-weight: lighter;
     color: var(--secondary-color);
     text-decoration: none;
-    border-bottom: 6px solid var(--secondary-color);
-    font-size: 2vw;
+    border: 6px solid var(--secondary-color);
+    font-size: 23px;
 }
 
 #contact-me ul li a:hover {
@@ -341,10 +344,11 @@ because I thought different design for smaller screens would look better*/
 .section-title h3 {
     font-size: 26px;
     padding: 25px;
+    white-space: nowrap;
 }
 
 #my-resume .section-title {
-    width: 15%;
+    width: 150px;
 }
 
 #my-resume h3 {
@@ -355,7 +359,7 @@ because I thought different design for smaller screens would look better*/
 }
 
 #contact-me .section-title {
-    width: 15%;
+    width: 150px;
 }
 
 #contact-me h3 {
@@ -415,6 +419,7 @@ footer h2 {
     margin-bottom: 35px;
     border-bottom: 3px solid var(--primary-color);
     margin-top: 35px;
+    white-space: nowrap;
 }
     
 .section-title h3 br {
@@ -588,6 +593,7 @@ header nav ul li a {
     margin-bottom: 35px;
     border-bottom: 3px solid var(--primary-color);
     margin-top: 35px;
+    white-space: nowrap;
 }
 
 .section-title h3 br {
