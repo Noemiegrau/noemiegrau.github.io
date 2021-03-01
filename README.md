@@ -17,7 +17,7 @@ Project is created using:
 * CSS3
 
 ## **_Mockup_**
- 
+
 
 ## **_Link URL to portfolio website_**
 https://noemiegrau.github.io/

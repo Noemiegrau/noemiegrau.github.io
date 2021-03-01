@@ -136,6 +136,8 @@ header nav ul li a:hover {
     align-items: center;
     justify-content: flex-start;
     margin: 10px 0px 10px 80px;
+    width: 280px;
+    height: 300px;
 }
 
 .bottom-right {
