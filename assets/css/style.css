@@ -270,6 +270,24 @@ header nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+.pawpals {
+    position: relative;
+}
+
+.pawpals img {
+    max-width: 50%;
+    height: auto;
+    padding: 0;
+    border: 5px solid var(--secondary-color);
+}
+
+#my-work .pawpals img:hover {
+    max-width: 50%;
+    height: auto;
+    padding: 0;
+    border: 5px solid var(--secondary-color);
+    opacity: 0.3;
+}
 
 /* ===8.MY RESUME SECTION=== */
 
@@ -699,5 +717,7 @@ footer h2 {
     font-weight: normal;
 }
 }
+
+
 
 
