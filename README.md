@@ -5,9 +5,7 @@
 * [Technologies used](#technologies-used)
 * [Screenshot of the website](#screenshot-of-the-website)
 * [Link URL to portfolio website](#link-URL-to-portfolio-website)
-* [Link URL to GitHub Repository](#link-URL-to-GitHub-Repository)[
-* [My GitHub](https://github.com/Noemiegrau)
-
+* [Link URL to GitHub Repository](#link-URL-to-GitHub-Repository)
 
 ## **_Description of the project_**
 This repository contains all the coding data related to my portfolio webpage.
