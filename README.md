@@ -5,7 +5,8 @@
 * [Technologies used](#technologies-used)
 * [Screenshot of the website](#screenshot-of-the-website)
 * [Link URL to portfolio website](#link-URL-to-portfolio-website)
-* [Link URL to GitHub Repository](#link-URL-to-GitHub-Repository)
+* [Link URL to GitHub Repository](#link-URL-to-GitHub-Repository)[
+* My GitHub](https://github.com/Noemiegrau)
 
 
 ## **_Description of the project_**
@@ -26,3 +27,5 @@ https://noemiegrau.github.io/
 
 ## **_Link URL to GitHub Repository_**
 https://github.com/Noemiegrau/noemiegrau.github.io
+
+
