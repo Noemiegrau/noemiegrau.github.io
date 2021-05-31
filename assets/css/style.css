@@ -257,7 +257,7 @@ header nav ul li a:hover {
     opacity: 0.3;
 }
 
-#my-work .foodforward img:hover {
+#my-work .food-forward img:hover {
     max-width: 50%;
     height: auto;
     padding: 0;
@@ -505,6 +505,11 @@ footer h2 {
 
 .horiseon img {
     max-width: 80%;
+    border: 10px solid var(--secondary-color);
+}
+	  
+.food-forward img {
+    max-width: 120%;
     border: 10px solid var(--secondary-color);
 }
 
