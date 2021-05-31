@@ -234,6 +234,13 @@ header nav ul li a:hover {
     border: 5px solid var(--secondary-color);
 }
 
+.foodforward img {
+    max-width: 50%;
+    height: auto;
+    padding: 0;
+    border: 5px solid var(--secondary-color);
+}
+
 #my-work .run-buddy img:hover {
     max-width: 100%;
     height: auto;
@@ -250,11 +257,23 @@ header nav ul li a:hover {
     opacity: 0.3;
 }
 
+#my-work .foodforward img:hover {
+    max-width: 50%;
+    height: auto;
+    padding: 0;
+    border: 5px solid var(--secondary-color);
+    opacity: 0.3;
+}
+
 .horiseon {
     position: relative;
 }
 
 .run-buddy {
+    position: relative;
+}
+
+.foodforward {
     position: relative;
 }
 
