@@ -234,7 +234,7 @@ header nav ul li a:hover {
     border: 5px solid var(--secondary-color);
 }
 
-.foodforward img {
+.food-forward img {
     max-width: 50%;
     height: auto;
     padding: 0;
@@ -273,7 +273,7 @@ header nav ul li a:hover {
     position: relative;
 }
 
-.foodforward {
+.food-forward {
     position: relative;
 }
 
